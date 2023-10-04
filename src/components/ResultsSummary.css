@@ -1,0 +1,9 @@
+.ResultsSummary{
+  
+}
+
+
+.result-section {
+
+    background-image: linear-gradient(to bottom, var(--Light-slate-blue-background) 5%, var(--Light-royal-blue-background) 60%);
+}
