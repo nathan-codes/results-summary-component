@@ -96,3 +96,7 @@ h6 {
 --fw-light: 500;
 
 }
+
+body {
+  font-family: var(--ff-main);
+}
