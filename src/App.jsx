@@ -1,13 +1,13 @@
 
 import './App.css'
 import ResultsSummary from './components/ResultsSummary'
-
+import  data from "../data.json"
 function App() {
  
   return (
-    <>
-   <ResultsSummary />
-    </>
+    <main className='App'>
+   <ResultsSummary data={data} />
+    </main>
   )
 }
 

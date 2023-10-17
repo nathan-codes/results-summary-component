@@ -63,11 +63,14 @@ p.score span {
   margin: 0;
 }
 
-.summary-section ul li {
-  border: 1px solid red;
-  margin: 0.5rem 0;
-  padding: 1rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 5px;
+@media (min-width: 500px) {
+  .ResultsSummary {
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    max-width: 600px;
+  }
+  .result-section {
+    border-radius: 30px;
+  } 
 }

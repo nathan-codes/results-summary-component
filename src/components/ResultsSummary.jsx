@@ -1,44 +1,33 @@
 import "./ResultsSummary.css";
+import Category from "./Category";
+import Button from "./Button";
 
-function ResultsSummary() {
+function ResultsSummary({ data }) {
   return (
     <div className="ResultsSummary">
       <div className="container text-center">
         <div className="row">
-          <div className="col-12 col-md-6 result-section">
+          <div className="col-12 col-sm-6 result-section">
             <h3 className="result-header"> Your Result</h3>
             <p className="score">
               <span>76 </span> of 100
             </p>
-            <h2 >Great</h2>
+            <h2>Great</h2>
             <h3 className="percentage">
               You scored higher than 65% of the people who have taken these
               tests.
             </h3>
           </div>
 
-          <div className="col-12 col-md-6 summary-section">
+          <div className="col-12 col-sm-6 summary-section px-4">
             <h2>Summary</h2>
 
             <ul>
-              <li>
-                <span>  Reaction</span> <span> 80/100 </span>
-              </li>
-
-              <li>
-                <span> Memory</span> <span> 92/100 </span>
-              </li>
-
-              <li>
-                <span> Verbal </span> <span> 61/100 </span>
-              </li>
-
-              <li>
-                <span> Visual </span> <span> 72/100 </span>
-              </li>
+              {data.map((item, index) => (
+                <Category data={item} key={index} />
+              ))}
             </ul>
-
-            <button>Continue</button>
+            <Button />
           </div>
         </div>
       </div>

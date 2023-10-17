@@ -1,0 +1,7 @@
+.Button {
+ width: 100%;
+ border-radius: 30px;
+ background-color: hsla(241, 65%, 17%, 0.966);
+color: white;
+margin-top: 1rem;
+}
